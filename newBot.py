@@ -73,12 +73,12 @@ class Tweeter():
         if num >= int(self.sessionKeys['totalFrames']):
             return schedule.cancel_job
         try:
-            #id = self.api.simple_upload(fileName)
-            #m_id = [id.media_id]
+            id = self.api.simple_upload(fileName)
+            m_id = [id.media_id]
             tw_text = "Frame " + str(num) + " of " + str(totalFrames) + " frames from " + movieName + ".!"
             #api.update_status("Hello Tweepy", media_ids=m_id)
             #api.update_status_with_media("Hello Tweepy", "/home/surya/twitter_bot/photo-1516117172878-fd2c41f4a759")
-            #self.client.create_tweet(text=tw_text, media_ids=m_id)
+            self.client.create_tweet(text=tw_text, media_ids=m_id)
             print(tw_text)
             print("Tweeted.!")
             self.updateFile()
