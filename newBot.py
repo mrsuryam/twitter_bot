@@ -69,7 +69,7 @@ class Tweeter():
 
         path = os.path.abspath(os.getcwd())
 
-        fileName = path + "/images/frame (" + str(num) + ").jpg"
+        fileName = path + "/frames1/frame_" + str(num) + ".jpg"
         print(fileName)
         if num >= int(self.sessionKeys['totalFrames']):
             return schedule.cancel_job
