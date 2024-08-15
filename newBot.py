@@ -64,11 +64,12 @@ class Tweeter():
         movieName = self.sessionKeys['movieName'] 
         totalFrames = self.sessionKeys['totalFrames']
 
-        num = self.getFileNum()
+        self.fileNum = self.getFileNum()
+        num = self.fileNum
 
         path = os.path.abspath(os.getcwd())
 
-        fileName = path + "/images/ante_" + str(num) + ".jpg"
+        fileName = path + "/images/frame (" + str(num) + ").jpg"
         print(fileName)
         if num >= int(self.sessionKeys['totalFrames']):
             return schedule.cancel_job
@@ -102,8 +103,8 @@ if __name__ == '__main__':
     tw.initNum()
     tw.postTweet()
     tw.updateFile()
-    #schedule.every(30).minutes.do(tw.postTweet)
-    schedule.every(5).seconds.do(tw.postTweet)
+    schedule.every(30).minutes.do(tw.postTweet)
+    #schedule.every(5).seconds.do(tw.postTweet)
 
     while True:
         # Checks whether a scheduled task 

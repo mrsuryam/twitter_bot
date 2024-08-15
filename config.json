@@ -1,10 +1,10 @@
 {
-    "apiKey" : "Pds3Frup8mz5wKdYnRFbyzQ6S",
-    "apiKeySecret" : "pn74Z7tWBjrq7zR9e1JH2J0KJxb1e5RehC1vEOqkLavhgnSmZy",
+    "apiKey" : "",
+    "apiKeySecret" : "",
 
-    "accessToken" : "1612766113095634945-FC4z80dfbftiVNAWyJSOoL5IO6qz5o",
-    "accessTokenSecret" : "uCYVpJ1ZrgLOu3xHZK2bRqS2nF7q1Fv3WGQQWijFrCYIv",
+    "accessToken" : "",
+    "accessTokenSecret" : "",
 
-    "totalFrames" : "358",
-    "movieName" : "Ante Sundaraniki"
+    "totalFrames" : "",
+    "movieName" : ""
 }
